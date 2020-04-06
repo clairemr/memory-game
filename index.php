@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <h1>Memory</h1>
     <script src="./script.js"></script>
     <?php 
     $cards = array("cactus", "peace lily", "jasmine", "lavender");
