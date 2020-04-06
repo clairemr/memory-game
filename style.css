@@ -3,3 +3,37 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    height: 100vh; /* viewport height */
+    display: flex;
+    background: #33ccff; /* change to img later */
+}
+
+.game {
+    width: 640px;
+    height: 320px;
+    /* centre game vertically and horizontally */
+    display: flex;
+    margin: auto;
+    /* wrap items along multiple lines */
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(25% - 10px);/* 4x3, leave space for margin */
+    height: calc(33.333% - 10px); 
+    margin: 5px;
+    position: relative;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+.front, 
+.back {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute; /* on top of card */
+    border-radius: 5px;
+    background: #1C7CCC;
+}
