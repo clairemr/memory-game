@@ -18,6 +18,8 @@ body {
     margin: auto;
     /* wrap items along multiple lines */
     flex-wrap: wrap;
+    /* 3D flip effect */
+    perspective: 1000px;
 }
 
 .card {
@@ -26,6 +28,18 @@ body {
     margin: 5px;
     position: relative;
     box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    transform: scale(1);
+    transform-style: preserve-3d;/*3d space created by parent*/
+    transition: transform .5s; /*movement effect */
+}
+
+.card:active{
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.card.flip{
+    transform: rotateY(180deg);
 }
 
 .front, 
