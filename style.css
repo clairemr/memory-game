@@ -50,4 +50,5 @@ body {
     position: absolute; /* on top of card */
     border-radius: 5px;
     background: #1C7CCC;
+    backface-visibility: hidden;
 }
